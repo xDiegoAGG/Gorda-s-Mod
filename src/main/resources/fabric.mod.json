@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "gordas-mod",
+	"version": "${version}",
+	"name": "Gorda's Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gordas-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.diegoagg.gordasmod.GordasMod"
+		],
+		"client": [
+			"com.diegoagg.gordasmod.GordasModClient"
+		]
+	},
+	"mixins": [
+		"gordas-mod.mixins.json",
+		{
+			"config": "gordas-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
