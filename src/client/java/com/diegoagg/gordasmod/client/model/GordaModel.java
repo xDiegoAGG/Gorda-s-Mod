@@ -11,9 +11,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class GordaModel extends EntityModel<GordaEntity> {
-	public static final EntityModelLayer MODEL_LAYER = new EntityModelLayer(
-		Identifier.of("gordas-mod", "gorda"), "main"
-	);
+	public static final EntityModelLayer MODEL_LAYER = new EntityModelLayer(Identifier.of("gordas-mod", "gorda"), "main");
 	
 	private final ModelPart head;
 	private final ModelPart body;
