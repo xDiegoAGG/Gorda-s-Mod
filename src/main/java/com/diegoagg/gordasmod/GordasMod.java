@@ -5,6 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.diegoagg.gordasmod.registry.ModEntities;
+import com.diegoagg.gordasmod.registry.ModItems;
+
 public class GordasMod implements ModInitializer {
 	public static final String MOD_ID = "gordas-mod";
 
@@ -20,5 +23,8 @@ public class GordasMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModEntities.register();
+        ModItems.register();
+        System.out.println("[Gorda's Mod] Loaded!");
 	}
 }
