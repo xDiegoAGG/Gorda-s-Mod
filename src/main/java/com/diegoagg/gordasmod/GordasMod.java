@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.diegoagg.gordasmod.registry.ModEntities;
+import com.diegoagg.gordasmod.registry.ModEntityAttributes;
 import com.diegoagg.gordasmod.registry.ModItems;
 
 public class GordasMod implements ModInitializer {
@@ -25,6 +26,7 @@ public class GordasMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModEntities.register();
         ModItems.register();
+		ModEntityAttributes.register();
         System.out.println("[Gorda's Mod] Loaded!");
 	}
 }
