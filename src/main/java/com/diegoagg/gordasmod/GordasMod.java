@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import com.diegoagg.gordasmod.registry.ModEntities;
 import com.diegoagg.gordasmod.registry.ModEntityAttributes;
 import com.diegoagg.gordasmod.registry.ModItems;
+import com.diegoagg.gordasmod.registry.ModSpawns;
 
 public class GordasMod implements ModInitializer {
 	public static final String MOD_ID = "gordas-mod";
@@ -27,6 +28,7 @@ public class GordasMod implements ModInitializer {
 		ModEntities.register();
         ModItems.register();
 		ModEntityAttributes.register();
+		ModSpawns.register();
         System.out.println("[Gorda's Mod] Loaded!");
 	}
 }
